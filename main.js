@@ -54,6 +54,7 @@ window.addEventListener('load', () => {
           temp.innerHTML = "It is currently "+tempValue+" °C";
           desc.innerHTML = "Description: "+descValue.toUpperCase();
         })
+        .catch(err => alert("Could got get your location!"));
     });
   }
 });
